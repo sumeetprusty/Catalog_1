@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Shopping Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>AR Shopping</h1>
+            <p>Try on products virtually!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="product-selection">
+                <h2>Select a Product to Try On</h2>
+                <select id="product-select">
+                    <option value="hat">Hat</option>
+                    <option value="glasses">Glasses</option>
+                    <option value="shirt">Shirt</option>
+                    <option value="shoes">Shoes</option>
+                </select>
+                <button id="try-on-button">Try On</button>
+            </section>
+
+            <section class="ar-view">
+                <h2>AR View</h2>
+                <div id="ar-container">
+                    <video id="camera-view" autoplay playsinline></video>
+                    <img id="virtual-product" src="" alt="Virtual Product">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
